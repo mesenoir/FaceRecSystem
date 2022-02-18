@@ -1,0 +1,4 @@
+#!/bin/bash
+
+gcc -I/usr/include/python3.8 -Wno-format -o test-bin test.c -Wno-deprecated-declarations -Wno-format-security -lm `pkg-config --cflags --libs gtk+-3.0` -export-dynamic -lpython3.8 -lmysqlclient
+

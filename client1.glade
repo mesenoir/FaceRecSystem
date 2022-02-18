@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.22.2 -->
+<interface>
+  <requires lib="gtk+" version="3.20"/>
+  <object class="GtkWindow" id="classWindow">
+    <property name="can_focus">False</property>
+    <property name="default_width">440</property>
+    <property name="default_height">250</property>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkFixed" id="classFixed">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkLabel" id="currentClassLabel">
+            <property name="width_request">100</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Today's classes:</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans Bold Italic 18"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">102</property>
+            <property name="y">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="classLabel">
+            <property name="width_request">100</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <attributes>
+              <attribute name="font-desc" value="Sawasdee Bold 15"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="y">59</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="attendButton">
+            <property name="label" translatable="yes">Back</property>
+            <property name="width_request">100</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_attendButton_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">322</property>
+            <property name="y">189</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
